@@ -1,7 +1,12 @@
 .logo{
-    height:60px;
+    height:45px;
 }
 
 .navbar {
-    background-color: #444;
+    background-color: rgb(235, 235, 235);
+    height: 60px;
+}
+
+.navbar li a {
+    font-size: 18px;
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Logo from './../../assets/imgs/TULogo.png'
+import Logo from './../../assets/imgs/Textbot.PNG'
 import './navbar.css';
 
 export default function Navbar(props) {
@@ -21,6 +21,17 @@ export default function Navbar(props) {
         </li>
         <li className="nav-item">
           <a className="nav-link" href="/">Contact</a>
+        </li>
+        <li className="nav-item dropdown">
+          <a className="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Settings
+          </a>
+          <ul className="dropdown-menu">
+            <li><a className="dropdown-item" href="/">Action</a></li>
+            <li><a className="dropdown-item" href="/">Dark Mode</a></li>
+            {/* <li><hr className="dropdown-divider" /></li> */}
+            <li><a className="dropdown-item" href="/">Something else here</a></li>
+          </ul>
         </li>
       </ul>
       <form className="d-flex" role="search">

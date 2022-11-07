@@ -123,7 +123,7 @@ export default function Footer() {
           <div className="text-center p-4" >
           {/* style="background-color: rgba(0, 0, 0, 0.05);" */}
             © 2022 Copyright:
-            <a className="text-reset fw-bold" href="https://mdbootstrap.com/"> Asutrio</a>
+            <a className="text-reset fw-bold" href="https:www.asutrio.com"> Asutrio</a>
           </div>
           {/* <!-- Copyright --> */}
         </footer>
