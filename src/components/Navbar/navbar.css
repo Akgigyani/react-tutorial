@@ -10,3 +10,10 @@
 .navbar li a {
     font-size: 18px;
 }
+
+.navbar li button {
+    font-size: 17px;
+    margin: 10px;
+    border: none;
+    background: none;
+}
