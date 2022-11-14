@@ -30,6 +30,14 @@ export default function Textform(props) {
         setText(event.target.value)
     }
 
+    const handleCopy = () => {
+        console.log("I am Copy");
+        var text = document.getElementById("myBox");
+        text.select();
+        text.setSelectionRange(0, 9999);
+        navigator.clipboard.writeText(text.value);
+    }
+
     const [text, setText] = useState('')
   return (
     <>
@@ -43,6 +51,7 @@ export default function Textform(props) {
         <button className="btn btn-secondary mx-2" onClick={handleLowerClick}>Convert to Lowercase</button>
         <button className="btn btn-warning mx-2" onClick={handleFirstLetterClick}>Convert first letter to uppercase</button>
         <button className="btn btn-danger mx-2" onClick={handleClearClick}>Clear text</button>
+        <button className="btn btn-dark mx-2" onClick={handleCopy}>Copy text</button>
         </div>
     </div>
     <div className="container my-4">
